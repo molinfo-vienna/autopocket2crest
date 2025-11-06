@@ -1,4 +1,4 @@
-# 🧩 AutoPocket2CREST  
+# AutoPocket2CREST  
 > *Automated protein–ligand pocket extraction and preparation pipeline for CREST conformational sampling.*
 
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)

@@ -1,0 +1,16 @@
+name: autopocket2crest
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - mdanalysis
+  - rdkit
+  - openbabel
+  - openmm
+  - pdbfixer
+  - numpy
+  - scipy
+  - pytest
+  - pip
+  - pip:
+      - autopocket2crest

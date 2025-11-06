@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: autopocket2crest
+Version: 1.0.0
+Summary: Automated protein–ligand pocket preparation pipeline for CREST conformational sampling.
+Author: Christian Fellinger
+Author-email: christian.fellinger@univie.ac.at
+Requires-Python: >=3.8
+License-File: LICENCE
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary

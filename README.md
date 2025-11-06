@@ -8,7 +8,7 @@
 
 ---
 
-## 🔍 Overview
+## Overview
 
 **AutoPocket2CREST** automates the preparation of **protein–ligand binding pockets** for **CREST** simulations.  
 Starting from a protein `.pdb` and ligand `.mol2` file, it automatically:
@@ -23,19 +23,19 @@ The pipeline ensures reproducible, chemically sound local environments ready for
 
 ---
 
-## ⚙️ Features
+## Features
 
-✅ **Automatic pocket detection** – radius expands dynamically until a sufficient local environment is captured  
-💧 **Hydrogenation and protonation** – Open Babel–based hydrogen addition at pH 7.4  
-🧩 **Structure refinement** – removes alternate locations, unbonded and isolated atoms  
-📏 **Constraint generation** – automatically identifies and compresses backbone atom indices for CREST  
-⚛️ **Charge detection** – calculates total formal charge via RDKit  
-🚀 **CREST-ready output** – `.pdb`, `.xyz`, `.mol2`, and constraints files ready to run  
-🧼 **Automated cleanup** of intermediate and temporary files  
+**Automatic pocket detection** – radius expands dynamically until a sufficient local environment is captured  
+**Hydrogenation and protonation** – Open Babel–based hydrogen addition at pH 7.4  
+**Structure refinement** – removes alternate locations, unbonded and isolated atoms  
+**Constraint generation** – automatically identifies and compresses backbone atom indices for CREST  
+**Charge detection** – calculates total formal charge via RDKit  
+**CREST-ready output** – `.pdb`, `.xyz`, `.mol2`, and constraints files ready to run  
+**Automated cleanup** of intermediate and temporary files  
 
 ---
 
-## 📁 Input Requirements
+## Input Requirements
 
 | File | Description |
 |------|--------------|
@@ -45,7 +45,7 @@ The pipeline ensures reproducible, chemically sound local environments ready for
 
 ---
 
-## 📤 Generated Output
+## Generated Output
 
 | File | Purpose |
 |------|----------|
@@ -58,7 +58,7 @@ The pipeline ensures reproducible, chemically sound local environments ready for
 
 ---
 
-## 🧪 Dependencies
+## Dependencies
 
 You’ll need the following tools installed and accessible:
 
@@ -74,9 +74,8 @@ You’ll need the following tools installed and accessible:
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 🐍 Option 1: Conda environment (recommended)
 ```bash
 conda create -n autopocket2crest python=3.10
 conda activate autopocket2crest

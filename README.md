@@ -80,3 +80,62 @@ You’ll need the following tools installed and accessible:
 conda create -n autopocket2crest python=3.10
 conda activate autopocket2crest
 conda install -c conda-forge mdanalysis rdkit openbabel pdbfixer openmm
+```
+
+## Usage
+
+Run AutoPocket2CREST directly from the command line:
+
+```bash
+python autopocket2crest.py <protein_file.pdb> <ligand_file.mol2> <PDB_ID>
+```
+
+Example:
+
+```bash
+python autopocket2crest.py 1ABC_protein.pdb 1ABC_ligand.mol2 1ABC
+```
+
+This will:
+
+1. Create a working directory /data/local/1ABC
+
+2. Automatically extract and prepare the ligand pocket
+
+3. Generate hydrogenated, CREST-ready structures
+
+4. Run CREST and save results
+
+## Example Workflow
+
+```bash
+Input:    1ABC_protein.pdb + 1ABC_ligand.mol2
+↓
+AutoPocket2CREST
+↓
+Pocket extraction → Hydrogenation → Cleanup → Constraint generation → CREST
+↓
+Output: test_pocket_extended_h_fixed.pdb, constraints.inp, crest.out
+
+```
+
+## Why use AutoPocket2CREST
+
+- Fully automated pocket generation and preparation
+
+- Reproducible, standardized quantum-ready systems
+
+- Compatible with CREST workflows
+
+- Simplifies pre-QM preparation for enzyme or receptor-ligand studies
+
+## Author & Citation
+
+Developed by Christian Fellinger (Github: Dragon3221)
+
+This will be part of my Doctoral Thesis. I will share how to Cite it as soon as it is available.
+
+## Acknowledgements
+
+This project builds on tools from the MDAnalysis, RDKit, Open Babel, CREST, and OpenMM communities.
+Thank you for all this hard work!

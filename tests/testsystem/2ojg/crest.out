@@ -1,0 +1,307 @@
+
+       ╔════════════════════════════════════════════╗
+       ║            ___ ___ ___ ___ _____           ║
+       ║           / __| _ \ __/ __|_   _|          ║
+       ║          | (__|   / _|\__ \ | |            ║
+       ║           \___|_|_\___|___/ |_|            ║
+       ║                                            ║
+       ║  Conformer-Rotamer Ensemble Sampling Tool  ║
+       ║          based on the xTB methods          ║
+       ║                                            ║
+       ╚════════════════════════════════════════════╝
+       Version 3.0.2, Tue, 05 August 16:25:20, 08/05/2025
+       commit (6914a25) compiled by 'usr@b54ea9d7c43e'
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+   • P.Pracht, S.Grimme, C.Bannwarth, F.Bohle, S.Ehlert,
+     G.Feldmann, J.Gorges, M.Müller, T.Neudecker, C.Plett,
+     S.Spicher, P.Steinbach, P.Wesołowski, F.Zeller,
+     J. Chem. Phys., 2024, 160, 114110.
+
+   for works involving QCG cite
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+   • C.Plett, S. Grimme,
+     Angew. Chem. Int. Ed. 2023, 62, e202214477.
+
+   for works involving MECP screening cite
+
+   • P.Pracht, C.Bannwarth, JCTC, 2022, 18 (10), 6370-6385.
+
+   Original code
+     P.Pracht, S.Grimme, Universität Bonn, MCTC
+   with help from (alphabetical order):
+     C.Bannwarth, F.Bohle, S.Ehlert, G.Feldmann, J.Gorges,
+     S.Grimme, C.Plett, P.Pracht, S.Spicher, P.Steinbach,
+     P.Wesolowski, F.Zeller
+
+   Online documentation is available at
+   https://crest-lab.github.io/crest-docs/
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+   GNU Lesser General Public License (LGPL) for more details.
+
+ Command line input:
+ $ crest /data/sharedXL/projects/pharmacophore_hot_spot_analysis/crest/autopocket2crest/tests/testsystem/2ojg/test_pocket_extended_h_fixed.pdb -gfnff -chrg 2 -gbsa h2o -squick --temp 310 --legacy -cinp constraints.inp
+
+  --gfnff : Use of GFN-FF requested.
+  -chrg 2
+  --gbsa h2o : implicit solvation
+  -squick  : very crude quick-mode (no NORMMD, no GC, crude opt.)
+  --cinp : constraints.inp
+
+ <constraints.inp> file present.
+ content of the constraining file (sorted):
+> $constrain
+>   atoms: 38-483
+>   force constant=0.5
+>   reference=coord.ref
+> $metadyn
+>   atoms: 1-37
+ fix file: coord.ref
+  atoms: 1-37
+     # of atoms considered for RMSDs:37
+
+ -------------------------
+ xTB Geometry Optimization
+ -------------------------
+ Geometry successfully optimized.
+ ------------------------------------------------
+ Generating MTD length from a flexibility measure
+ ------------------------------------------------
+ Calculating GFN0-xTB WBOs   ... done.
+ Calculating NCI flexibility... done.
+     covalent flexibility measure :   0.144
+ non-covalent flexibility measure :   0.403
+ flexibility measure :   0.149
+ t(MTD) / ps    :     2.5
+ Σ(t(MTD)) / ps :    15.0 (6 MTDs)
+
+-------------------------------------
+Starting a trial MTD to test settings
+-------------------------------------
+ Estimated runtime for one MTD (2.5 ps) on a single thread: 8 h 33 min 6 sec
+ Estimated runtime for a batch of 6 MTDs on 8 threads: 8 h 33 min 6 sec
+
+ list of Vbias parameters applied:
+$metadyn    0.07400   1.200
+$metadyn    0.03700   1.200
+$metadyn    0.07400   0.600
+$metadyn    0.03700   0.600
+$metadyn    0.07400   0.300
+$metadyn    0.03700   0.300
+
+******************************************************************************************
+**                         N E W   I T E R A T I O N  C Y C L E                         **
+******************************************************************************************
+
+========================================
+            MTD Iteration  1
+========================================
+
+     ========================================
+     |         Meta-MD (MTD) Sampling       |
+     ========================================
+
+Starting Meta-MD   1 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0740
+     Vbias exp α /bohr⁻²:    1.20
+Starting Meta-MD   5 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0740
+     Vbias exp α /bohr⁻²:    0.30
+Starting Meta-MD   6 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0370
+     Vbias exp α /bohr⁻²:    0.30
+Starting Meta-MD   2 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0370
+     Vbias exp α /bohr⁻²:    1.20
+Starting Meta-MD   3 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0740
+     Vbias exp α /bohr⁻²:    0.60
+Starting Meta-MD   4 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0370
+     Vbias exp α /bohr⁻²:    0.60
+*Meta-MTD 1 finished*
+*Meta-MTD 2 finished*
+*Meta-MTD 3 finished*
+*Meta-MTD 5 finished*
+*Meta-MTD 4 finished*
+*Meta-MTD 6 finished*
+
+-----------------------
+Multilevel Optimization
+-----------------------
+
+ -------------------------
+ 1. crude pre-optimization
+ -------------------------
+ Optimizing all 150 structures from file "crest_rotamers_0.xyz" ...
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150
+ done.
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -80.39838
+ 40 structures remain within    10.00 kcal/mol window
+
+
+========================================
+            MTD Iteration  2
+========================================
+
+     ========================================
+     |         Meta-MD (MTD) Sampling       |
+     ========================================
+
+Starting Meta-MD   4 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0370
+     Vbias exp α /bohr⁻²:    0.60
+Starting Meta-MD   1 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0740
+     Vbias exp α /bohr⁻²:    1.20
+Starting Meta-MD   2 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0370
+     Vbias exp α /bohr⁻²:    1.20
+Starting Meta-MD   3 with the settings:
+     MD time /ps        :     2.5
+     dt /fs             :     1.5
+     dumpstep(trj) /fs  :     100
+     dumpstep(Vbias)/ps :     1.0
+     Vbias factor k /Eh :  0.0740
+     Vbias exp α /bohr⁻²:    0.60
+*Meta-MTD 2 finished*
+*Meta-MTD 3 finished*
+*Meta-MTD 1 finished*
+*Meta-MTD 4 finished*
+
+-----------------------
+Multilevel Optimization
+-----------------------
+
+ -------------------------
+ 1. crude pre-optimization
+ -------------------------
+ Optimizing all 100 structures from file "crest_rotamers_0.xyz" ...
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
+ done.
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -80.39812
+ 48 structures remain within    10.00 kcal/mol window
+
+========================================
+            MTD Iterations done         
+========================================
+ Collecting ensembles.
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -80.39838
+ 61 structures remain within     5.00 kcal/mol window
+
+ -------------------------------
+ Additional orientation sampling
+ -------------------------------
+ Optimizing all 208 structures from file "oh_ensemble.xyz" ...
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208
+ done.
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -80.39904
+ 62 structures remain within     5.00 kcal/mol window
+
+
+
+   ================================================
+   |           Final Geometry Optimization        |
+   ================================================
+ --------------------------------------------
+ Ensemble optimization with normal thresholds
+ --------------------------------------------
+ Optimizing all 62 structures from file "crest_rotamers_2.xyz" ...
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62
+ done.
+CREGEN> running RMSDs ... done.
+CREGEN> E lowest :   -80.39904
+ 3 structures remain within     5.00 kcal/mol window
+
+ input  file name : crest_rotamers_3.xyz
+ output file name : crest_rotamers_4.xyz
+ number of atoms                :   483
+ number of points on xyz files  :   62
+ RMSD threshold                 :   0.1250
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ # fragment in coord            :    10
+ # bonds in reference structure :   477
+   => # of C=C bonds :    11
+ number of reliable points      :    62
+ sorting energy window (EWIN)   :    5.0000 / kcal*mol⁻¹
+ reference state Etot           :  -80.399039560000006
+ number of doubles removed by rot/RMSD         :          59
+ total number unique points considered further :           3
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000   -80.39904    0.39452    0.78726       1       2     hor
+       2   0.003   -80.39904    0.39275                                mtd1
+       3   0.381   -80.39843    0.21274    0.21274       2       1     mtd2
+T /K                                  :   310.00
+E lowest                              :   -80.39904
+ensemble average energy (kcal)        :    0.082
+ensemble entropy (J/mol K, cal/mol K) :    8.840    2.113
+ensemble free energy (kcal/mol)       :   -0.655
+population of lowest in %             :   78.726
+ number of unique conformers for further calc            2
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+ CREST runtime (total)               0 d,  0 h, 14 min, 49.405 sec
+ ------------------------------------------------------------------
+ test MD                    ...        0 min, 25.878 sec (  2.910%)
+ MTD                        ...        3 min, 32.770 sec ( 23.923%)
+ multilevel OPT             ...        3 min,  5.091 sec ( 20.811%)
+                            ...        1 min, 45.969 sec ( 11.915%)
+ I/O and setup              ...        5 min, 59.696 sec ( 40.442%)
+ ------------------------------------------------------------------
+ * wall-time:     0 d,  0 h, 14 min, 49.405 sec
+ *  cpu-time:     0 d,  0 h,  0 min, 54.846 sec
+ * ratio c/w:     0.062 speedup
+ ------------------------------------------------------------------
+ CREST terminated normally.

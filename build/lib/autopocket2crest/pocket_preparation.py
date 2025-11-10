@@ -1,60 +1,69 @@
 import os, time, MDAnalysis as mda
 from rdkit import Chem
-from .pdb_utils import filter_pdb_by_altloc
+from .pdb_utils import filter_pdb_by_altloc, cut_pocket
 from .ligand_utils import get_ligand_name
 from .remove_unbonded import remove_unbonded
 from .crest_interface import generate_constraints, run_crest
 from .transfer_pdb_info import transfer_pdb_info
 from .cleanup import cleanup_temp_files
 
-def run_pipeline(protein_file, ligand_file, pdbid, run_crest=True):
+def run_pipeline(protein_file, ligand_file, pdbid, run_crest_bool=True, base_dir=".", temp="310", lvl_of_theory="gfnff", extra_crest_args="-squick"):
     """Full AutoPocket2CREST pipeline."""
+    print("Starting AutoPocket2CREST pipeline...")    
     start = time.time()
-    os.makedirs(pdbid, exist_ok=True)
-    os.chdir(pdbid)
+    os.makedirs(os.path.join(base_dir, pdbid), exist_ok=True)
+    os.chdir(os.path.join(base_dir, pdbid))
 
-    filter_pdb_by_altloc(protein_file, "prepared.pdb")
-    ligand_resname = get_ligand_name(ligand_file, protein_file)
+    cwd = os.getcwd()
+    print(f"Current working directory: {cwd}")
+    filter_pdb_by_altloc(f"{base_dir}/{protein_file}", "prepared.pdb")
+    ligand_resname = get_ligand_name(f"{base_dir}/{ligand_file}", f"{base_dir}/{protein_file}")
     print(f"Ligand identified: {ligand_resname}")
 
     u_prot = mda.Universe("prepared.pdb")
-    u_lig = mda.Universe(ligand_file)
+    u_lig = mda.Universe(f"{base_dir}/{ligand_file}")
     u = mda.Merge(u_prot.select_atoms("protein"), u_lig.atoms)
     ligand = u.select_atoms(f"resname {ligand_resname}")
 
-    pocket = u.select_atoms("around 3 group ligand_group", ligand_group=ligand)
-    while len(pocket) < 70:
-        pocket = u.select_atoms(f"around {3 + len(pocket)/50:.1f} group ligand_group", ligand_group=ligand)
-
-    pocket = pocket.residues.atoms
-    pocket.write("test_pocket_extended.pdb")
-
-    remove_unbonded("test_pocket_extended.pdb", "test_pocket_extended_clean.pdb")
+    print("Cutting pocket around the ligand...")
+    cut_pocket(ligand, ligand_resname, u)
+    os.system(f"obabel -ipdb {cwd}/test_pocket_extended.pdb -opdb -O {cwd}/test_pocket_extended.pdb -d")
+    remove_unbonded(f"{cwd}/test_pocket_extended.pdb", f"{cwd}/test_pocket_extended_clean.pdb")
 
     # Hydrogenation (Open Babel)
-    os.system("obabel -ipdb test_pocket_extended_clean.pdb -opdb -O test_pocket_extended_h.pdb -p 7.4")
+    print("Adding hydrogens to pocket...")
+    os.system(f"obabel -ipdb {cwd}/test_pocket_extended_clean.pdb -opdb -O {cwd}/test_pocket_extended_h.pdb -p 7.4")
 
     # Merge ligand + pocket_h
-    u_pocket = mda.Universe("test_pocket_extended_h.pdb")
+    print("Merging ligand and hydrogenated pocket...")
+    u_pocket = mda.Universe(f"{cwd}/test_pocket_extended_h.pdb")
     full = mda.Merge(ligand, u_pocket.atoms)
-    full.atoms.write("test_pocket_extended_h_fixed.pdb")
+    full.atoms.write(f"{cwd}/test_pocket_extended_h_fixed.pdb")
 
     # Calculate charge
-    mol = Chem.MolFromPDBFile("test_pocket_extended_h_fixed.pdb", sanitize=False, removeHs=False)
+    print("Calculating formal charge of the system...")
+    mol = Chem.MolFromPDBFile(f"{cwd}/test_pocket_extended_h_fixed.pdb", sanitize=False, removeHs=False)
     charge = Chem.GetFormalCharge(mol)
     print("Formal charge:", charge)
 
-    if run_crest:
-        backbone = list(range(1, len(full.atoms)//2))  # Simplified
-        constraint_file = generate_constraints("test_pocket_extended_h_fixed.pdb", backbone)
-        run_crest("test_pocket_extended_h_fixed.xyz", constraint_file, charge)
-        transfer_pdb_info("test_pocket_extended_h_fixed.pdb", "crest_conformers.pdb", "crest_conformers_updated.pdb")
+    if run_crest_bool:
+        print("Running CREST conformer search...")
+        # Select backbone atoms from this definitive final structure
+        u_final = mda.Universe(f"{cwd}/test_pocket_extended_h_fixed.pdb")
+        backbone_sel = u_final.select_atoms(f"not resname {ligand_resname}")
+        backbone = (backbone_sel.indices + 1).tolist()
+        constraint_file = generate_constraints(f"{cwd}/test_pocket_extended_h_fixed.pdb", backbone)
+        run_crest(f"{cwd}/test_pocket_extended_h_fixed.pdb", constraint_file, charge, temp=temp, lvl_of_theory=lvl_of_theory, extra_crest_args=extra_crest_args)
+        os.system("obabel -ixyz crest_conformers.xyz -opdb -O crest_conformers.pdb")
+
+        transfer_pdb_info(f"{cwd}/test_pocket_extended_h_fixed.pdb", f"{cwd}/crest_conformers.pdb", f"{cwd}/crest_conformers_updated.pdb")
+        print("CREST conformer search complete.")
 
     cleanup_temp_files([
-    "test_pocket_extended.pdb",
-    "test_pocket_extended_h.pdb",
-    "prepared.pdb",
-    ".CHRG",
-    ".xcontrol.sample"
+    f"{cwd}/test_pocket_extended.pdb",
+    f"{cwd}/test_pocket_extended_h.pdb",
+    f"{cwd}/prepared.pdb",
+    f"{cwd}/.CHRG",
+    f"{cwd}/.xcontrol.sample"
     ])
     print("AutoPocket2CREST complete in", round((time.time()-start)/3600, 2), "hours.")

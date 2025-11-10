@@ -1,0 +1,975 @@
+TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+CRYST1    1.000    1.000    1.000  90.00  90.00  90.00 P 1           1
+REMARK     285 UNITARY VALUES FOR THE UNIT CELL AUTOMATICALLY SET
+REMARK     285 BY MDANALYSIS PDBWRITER BECAUSE UNIT CELL INFORMATION
+REMARK     285 WAS MISSING.
+REMARK     285 PROTEIN DATA BANK CONVENTIONS REQUIRE THAT
+REMARK     285 CRYST1 RECORD IS INCLUDED, BUT THE VALUES ON
+REMARK     285 THIS RECORD ARE MEANINGLESS.
+ATOM      1  C1  19A X   1      -9.160  13.415  41.239  1.00  0.00      SYST C  
+ATOM      2  N2  19A X   1     -10.626  13.263  41.177  1.00  0.00      SYST N  
+ATOM      3  C3  19A X   1     -11.436  14.225  41.934  1.00  0.00      SYST C  
+ATOM      4  C4  19A X   1     -11.176  12.224  40.412  1.00  0.00      SYST C  
+ATOM      5  O5  19A X   1     -10.408  11.485  39.810  1.00  0.00      SYST O  
+ATOM      6  C6  19A X   1     -12.664  11.933  40.269  1.00  0.00      SYST C  
+ATOM      7  C7  19A X   1     -13.700  12.321  41.096  1.00  0.00      SYST C  
+ATOM      8  C8  19A X   1     -14.911  11.823  40.594  1.00  0.00      SYST C  
+ATOM      9  C9  19A X   1     -14.592  11.123  39.452  1.00  0.00      SYST C  
+ATOM     10  N10 19A X   1     -13.244  11.188  39.259  1.00  0.00      SYST N  
+ATOM     11  C12 19A X   1     -16.293  12.005  41.194  1.00  0.00      SYST C  
+ATOM     12  N13 19A X   1     -17.251  11.090  41.127  1.00  0.00      SYST N  
+ATOM     13  N14 19A X   1     -18.384  11.564  41.780  1.00  0.00      SYST N  
+ATOM     14  C16 19A X   1     -18.131  12.785  42.261  1.00  0.00      SYST C  
+ATOM     15  C17 19A X   1     -16.837  13.124  41.933  1.00  0.00      SYST C  
+ATOM     16  C18 19A X   1     -16.183  14.428  42.311  1.00  0.00      SYST C  
+ATOM     17  C19 19A X   1     -15.487  15.246  41.368  1.00  0.00      SYST C  
+ATOM     18  C20 19A X   1     -14.896  16.461  41.779  1.00  0.00      SYST C  
+ATOM     19  C21 19A X   1     -15.005  16.869  43.127  1.00  0.00      SYST C  
+ATOM     20  C22 19A X   1     -15.696  16.063  44.074  1.00  0.00      SYST C  
+ATOM     21  C23 19A X   1     -16.280  14.859  43.672  1.00  0.00      SYST C  
+ATOM     22  H1  19A X   1      -8.907  14.274  41.878  1.00  0.00      SYST H  
+ATOM     23  H2  19A X   1      -8.766  13.583  40.226  1.00  0.00      SYST H  
+ATOM     24  H3  19A X   1      -8.714  12.501  41.659  1.00  0.00      SYST H  
+ATOM     25  H4  19A X   1     -12.503  13.994  41.798  1.00  0.00      SYST H  
+ATOM     26  H5  19A X   1     -11.232  15.243  41.570  1.00  0.00      SYST H  
+ATOM     27  H6  19A X   1     -11.180  14.160  43.002  1.00  0.00      SYST H  
+ATOM     28  H7  19A X   1     -13.593  12.921  41.999  1.00  0.00      SYST H  
+ATOM     29  H8  19A X   1     -15.300  10.603  38.809  1.00  0.00      SYST H  
+ATOM     30  H9  19A X   1     -12.735  10.749  38.479  1.00  0.00      SYST H  
+ATOM     31  H10 19A X   1     -17.169  10.173  40.665  1.00  0.00      SYST H  
+ATOM     32  H11 19A X   1     -18.830  13.407  42.818  1.00  0.00      SYST H  
+ATOM     33  H12 19A X   1     -15.413  14.932  40.333  1.00  0.00      SYST H  
+ATOM     34  H13 19A X   1     -14.362  17.077  41.064  1.00  0.00      SYST H  
+ATOM     35  H14 19A X   1     -14.558  17.805  43.443  1.00  0.00      SYST H  
+ATOM     36  H15 19A X   1     -15.769  16.383  45.107  1.00  0.00      SYST H  
+ATOM     37  H16 19A X   1     -16.809  14.248  44.395  1.00  0.00      SYST H  
+ATOM     38  C   UNL X   1     -20.768  20.635  37.305  1.00  0.00      SYST C  
+ATOM     39  C   UNL X   1     -20.738  19.994  38.692  1.00  0.00      SYST C  
+ATOM     40  O   UNL X   1     -21.741  19.989  39.406  1.00  0.00      SYST O  
+ATOM     41  N   UNL X   1     -19.582  19.449  39.066  1.00  0.00      SYST N  
+ATOM     42  C   UNL X   1     -19.410  18.848  40.386  1.00  0.00      SYST C  
+ATOM     43  C   UNL X   1     -18.174  19.374  41.110  1.00  0.00      SYST C  
+ATOM     44  O   UNL X   1     -18.216  19.646  42.309  1.00  0.00      SYST O  
+ATOM     45  C   UNL X   1     -19.280  17.312  40.304  1.00  0.00      SYST C  
+ATOM     46  C   UNL X   1     -20.568  16.708  39.744  1.00  0.00      SYST C  
+ATOM     47  C   UNL X   1     -19.000  16.737  41.684  1.00  0.00      SYST C  
+ATOM     48  C   UNL X   1     -20.571  15.194  39.722  1.00  0.00      SYST C  
+ATOM     49  N   UNL X   1     -17.072  19.511  40.380  1.00  0.00      SYST N  
+ATOM     50  C   UNL X   1     -15.845  19.986  40.991  1.00  0.00      SYST C  
+ATOM     51  C   UNL X   1     -14.727  20.197  39.988  1.00  0.00      SYST C  
+ATOM     52  O   UNL X   1     -14.730  19.604  38.909  1.00  0.00      SYST O  
+ATOM     53  N   UNL X   1     -13.769  21.045  40.347  1.00  0.00      SYST N  
+ATOM     54  C   UNL X   1     -12.638  21.349  39.478  1.00  0.00      SYST C  
+ATOM     55  C   UNL X   1     -11.322  21.185  40.237  1.00  0.00      SYST C  
+ATOM     56  O   UNL X   1     -11.309  21.006  41.456  1.00  0.00      SYST O  
+ATOM     57  C   UNL X   1     -12.758  22.780  38.944  1.00  0.00      SYST C  
+ATOM     58  C   UNL X   1     -11.721  23.155  37.898  1.00  0.00      SYST C  
+ATOM     59  C   UNL X   1     -12.014  24.560  37.411  1.00  0.00      SYST C  
+ATOM     60  O   UNL X   1     -11.169  25.146  36.737  1.00  0.00      SYST O  
+ATOM     61  O   UNL X   1     -13.095  25.062  37.712  1.00  0.00      SYST O  
+ATOM     62  N   UNL X   1     -10.214  21.244  39.506  1.00  0.00      SYST N  
+ATOM     63  C   UNL X   1      -8.907  21.088  40.118  1.00  0.00      SYST C  
+ATOM     64  C   UNL X   2      -5.498  20.428  38.571  1.00  0.00      SYST C  
+ATOM     65  C   UNL X   2      -5.755  19.250  37.634  1.00  0.00      SYST C  
+ATOM     66  O   UNL X   2      -5.324  19.238  36.479  1.00  0.00      SYST O  
+ATOM     67  N   UNL X   2      -6.470  18.256  38.148  1.00  0.00      SYST N  
+ATOM     68  C   UNL X   2      -6.812  17.063  37.382  1.00  0.00      SYST C  
+ATOM     69  C   UNL X   2      -7.730  17.397  36.207  1.00  0.00      SYST C  
+ATOM     70  O   UNL X   2      -7.942  16.576  35.313  1.00  0.00      SYST O  
+ATOM     71  C   UNL X   2      -7.503  16.048  38.295  1.00  0.00      SYST C  
+ATOM     72  C   UNL X   2      -8.663  16.635  39.065  1.00  0.00      SYST C  
+ATOM     73  C   UNL X   2      -9.942  16.651  38.526  1.00  0.00      SYST C  
+ATOM     74  C   UNL X   2      -8.476  17.192  40.322  1.00  0.00      SYST C  
+ATOM     75  C   UNL X   2     -11.001  17.209  39.215  1.00  0.00      SYST C  
+ATOM     76  C   UNL X   2      -9.529  17.753  41.020  1.00  0.00      SYST C  
+ATOM     77  C   UNL X   2     -10.789  17.759  40.461  1.00  0.00      SYST C  
+ATOM     78  O   UNL X   2     -11.841  18.320  41.147  1.00  0.00      SYST O  
+ATOM     79  N   UNL X   2      -8.270  18.611  36.217  1.00  0.00      SYST N  
+ATOM     80  C   UNL X   2      -9.296  18.979  35.258  1.00  0.00      SYST C  
+ATOM     81  C   UNL X   3     -13.015  19.378  35.902  1.00  0.00      SYST C  
+ATOM     82  C   UNL X   3     -13.929  18.176  35.715  1.00  0.00      SYST C  
+ATOM     83  O   UNL X   3     -13.936  17.525  34.669  1.00  0.00      SYST O  
+ATOM     84  N   UNL X   3     -14.706  17.883  36.752  1.00  0.00      SYST N  
+ATOM     85  C   UNL X   3     -15.618  16.750  36.729  1.00  0.00      SYST C  
+ATOM     86  C   UNL X   3     -17.071  17.205  36.714  1.00  0.00      SYST C  
+ATOM     87  O   UNL X   3     -17.480  18.059  37.500  1.00  0.00      SYST O  
+ATOM     88  C   UNL X   3     -15.416  15.844  37.957  1.00  0.00      SYST C  
+ATOM     89  C   UNL X   3     -16.394  14.680  37.912  1.00  0.00      SYST C  
+ATOM     90  C   UNL X   3     -13.984  15.337  38.000  1.00  0.00      SYST C  
+ATOM     91  N   UNL X   3     -17.852  16.623  35.809  1.00  0.00      SYST N  
+ATOM     92  C   UNL X   3     -19.273  16.925  35.715  1.00  0.00      SYST C  
+ATOM     93  C   UNL X   4     -22.298   9.099  35.779  1.00  0.00      SYST C  
+ATOM     94  C   UNL X   4     -21.487  10.353  36.105  1.00  0.00      SYST C  
+ATOM     95  O   UNL X   4     -22.014  11.461  36.199  1.00  0.00      SYST O  
+ATOM     96  N   UNL X   4     -20.185  10.158  36.292  1.00  0.00      SYST N  
+ATOM     97  C   UNL X   4     -19.255  11.265  36.465  1.00  0.00      SYST C  
+ATOM     98  C   UNL X   4     -18.268  11.281  35.305  1.00  0.00      SYST C  
+ATOM     99  O   UNL X   4     -17.781  10.237  34.869  1.00  0.00      SYST O  
+ATOM    100  C   UNL X   4     -18.508  11.124  37.787  1.00  0.00      SYST C  
+ATOM    101  N   UNL X   4     -17.976  12.475  34.804  1.00  0.00      SYST N  
+ATOM    102  C   UNL X   4     -17.053  12.621  33.687  1.00  0.00      SYST C  
+ATOM    103  C   UNL X   4     -15.963  13.632  34.012  1.00  0.00      SYST C  
+ATOM    104  O   UNL X   4     -16.243  14.758  34.425  1.00  0.00      SYST O  
+ATOM    105  N   UNL X   4     -14.714  13.219  33.827  1.00  0.00      SYST N  
+ATOM    106  C   UNL X   4     -13.579  14.112  34.015  1.00  0.00      SYST C  
+ATOM    107  C   UNL X   4     -12.951  14.474  32.675  1.00  0.00      SYST C  
+ATOM    108  O   UNL X   4     -12.540  13.605  31.906  1.00  0.00      SYST O  
+ATOM    109  C   UNL X   4     -12.525  13.455  34.906  1.00  0.00      SYST C  
+ATOM    110  C   UNL X   4     -11.260  14.279  35.056  1.00  0.00      SYST C  
+ATOM    111  C   UNL X   4     -10.054  13.395  35.328  1.00  0.00      SYST C  
+ATOM    112  C   UNL X   4     -10.216  12.618  36.618  1.00  0.00      SYST C  
+ATOM    113  N   UNL X   4      -8.989  11.841  36.938  1.00  0.00      SYST N  
+ATOM    114  N   UNL X   4     -12.878  15.771  32.403  1.00  0.00      SYST N  
+ATOM    115  C   UNL X   4     -12.267  16.265  31.175  1.00  0.00      SYST C  
+ATOM    116  C   UNL X   5     -11.385   1.842  43.995  1.00  0.00      SYST C  
+ATOM    117  C   UNL X   5     -12.201   2.350  42.815  1.00  0.00      SYST C  
+ATOM    118  O   UNL X   5     -12.935   1.582  42.187  1.00  0.00      SYST O  
+ATOM    119  N   UNL X   5     -12.079   3.639  42.508  1.00  0.00      SYST N  
+ATOM    120  C   UNL X   5     -12.865   4.196  41.419  1.00  0.00      SYST C  
+ATOM    121  C   UNL X   5     -12.476   3.514  40.110  1.00  0.00      SYST C  
+ATOM    122  O   UNL X   5     -11.316   3.161  39.878  1.00  0.00      SYST O  
+ATOM    123  C   UNL X   5     -12.634   5.708  41.254  1.00  0.00      SYST C  
+ATOM    124  C   UNL X   5     -13.725   6.301  40.362  1.00  0.00      SYST C  
+ATOM    125  C   UNL X   5     -11.300   5.965  40.560  1.00  0.00      SYST C  
+ATOM    126  C   UNL X   5     -13.573   7.785  40.138  1.00  0.00      SYST C  
+ATOM    127  N   UNL X   5     -13.464   3.316  39.248  1.00  0.00      SYST N  
+ATOM    128  C   UNL X   5     -13.196   2.673  37.977  1.00  0.00      SYST C  
+ATOM    129  C   UNL X   6     -16.122   8.288  32.573  1.00  0.00      SYST C  
+ATOM    130  C   UNL X   6     -15.933   7.342  33.754  1.00  0.00      SYST C  
+ATOM    131  O   UNL X   6     -15.387   6.252  33.604  1.00  0.00      SYST O  
+ATOM    132  N   UNL X   6     -16.386   7.766  34.929  1.00  0.00      SYST N  
+ATOM    133  C   UNL X   6     -16.088   7.048  36.166  1.00  0.00      SYST C  
+ATOM    134  C   UNL X   6     -17.304   6.973  37.076  1.00  0.00      SYST C  
+ATOM    135  O   UNL X   6     -18.333   7.584  36.794  1.00  0.00      SYST O  
+ATOM    136  C   UNL X   6     -14.936   7.738  36.903  1.00  0.00      SYST C  
+ATOM    137  C   UNL X   6     -13.647   7.817  36.099  1.00  0.00      SYST C  
+ATOM    138  C   UNL X   6     -12.566   8.498  36.919  1.00  0.00      SYST C  
+ATOM    139  O   UNL X   6     -12.612   9.707  37.144  1.00  0.00      SYST O  
+ATOM    140  N   UNL X   6     -11.586   7.720  37.372  1.00  0.00      SYST N  
+ATOM    141  N   UNL X   6     -17.180   6.219  38.167  1.00  0.00      SYST N  
+ATOM    142  C   UNL X   6     -18.243   6.132  39.159  1.00  0.00      SYST C  
+ATOM    143  C   UNL X   6     -18.672   7.532  39.582  1.00  0.00      SYST C  
+ATOM    144  O   UNL X   6     -17.845   8.429  39.715  1.00  0.00      SYST O  
+ATOM    145  C   UNL X   6     -17.765   5.356  40.394  1.00  0.00      SYST C  
+ATOM    146  C   UNL X   6     -17.475   3.896  40.096  1.00  0.00      SYST C  
+ATOM    147  O   UNL X   6     -16.332   3.576  39.771  1.00  0.00      SYST O  
+ATOM    148  O   UNL X   6     -18.393   3.081  40.197  1.00  0.00      SYST O  
+ATOM    149  N   UNL X   6     -19.973   7.711  39.788  1.00  0.00      SYST N  
+ATOM    150  C   UNL X   6     -20.506   8.981  40.264  1.00  0.00      SYST C  
+ATOM    151  C   UNL X   6     -20.801   8.865  41.757  1.00  0.00      SYST C  
+ATOM    152  O   UNL X   6     -21.471   7.933  42.200  1.00  0.00      SYST O  
+ATOM    153  C   UNL X   6     -21.787   9.336  39.495  1.00  0.00      SYST C  
+ATOM    154  C   UNL X   6     -22.410  10.727  39.690  1.00  0.00      SYST C  
+ATOM    155  C   UNL X   6     -23.054  10.841  41.058  1.00  0.00      SYST C  
+ATOM    156  C   UNL X   6     -21.341  11.787  39.514  1.00  0.00      SYST C  
+ATOM    157  N   UNL X   6     -20.296   9.818  42.532  1.00  0.00      SYST N  
+ATOM    158  C   UNL X   6     -20.428   9.770  43.986  1.00  0.00      SYST C  
+ATOM    159  C   UNL X   6     -20.933  11.115  44.502  1.00  0.00      SYST C  
+ATOM    160  O   UNL X   6     -20.823  12.113  43.799  1.00  0.00      SYST O  
+ATOM    161  C   UNL X   6     -19.072   9.429  44.611  1.00  0.00      SYST C  
+ATOM    162  C   UNL X   6     -18.392   8.214  43.980  1.00  0.00      SYST C  
+ATOM    163  S   UNL X   6     -19.157   6.629  44.416  1.00  0.00      SYST S  
+ATOM    164  C   UNL X   6     -18.526   6.401  46.080  1.00  0.00      SYST C  
+ATOM    165  N   UNL X   6     -21.480  11.146  45.714  1.00  0.00      SYST N  
+ATOM    166  C   UNL X   6     -22.097  12.367  46.230  1.00  0.00      SYST C  
+ATOM    167  C   UNL X   6     -21.087  13.423  46.678  1.00  0.00      SYST C  
+ATOM    168  O   UNL X   6     -21.232  14.602  46.359  1.00  0.00      SYST O  
+ATOM    169  C   UNL X   6     -23.033  12.048  47.401  1.00  0.00      SYST C  
+ATOM    170  C   UNL X   6     -23.605  13.295  48.065  1.00  0.00      SYST C  
+ATOM    171  C   UNL X   6     -24.569  13.071  49.216  1.00  0.00      SYST C  
+ATOM    172  O   UNL X   6     -25.361  13.986  49.476  1.00  0.00      SYST O  
+ATOM    173  O   UNL X   6     -24.538  12.014  49.848  1.00  0.00      SYST O  
+ATOM    174  N   UNL X   6     -20.067  13.004  47.422  1.00  0.00      SYST N  
+ATOM    175  C   UNL X   6     -19.110  13.952  47.976  1.00  0.00      SYST C  
+ATOM    176  C   UNL X   6     -17.745  13.284  48.154  1.00  0.00      SYST C  
+ATOM    177  O   UNL X   6     -17.549  12.165  47.693  1.00  0.00      SYST O  
+ATOM    178  C   UNL X   6     -19.628  14.504  49.323  1.00  0.00      SYST C  
+ATOM    179  O   UNL X   6     -18.728  15.506  49.812  1.00  0.00      SYST O  
+ATOM    180  C   UNL X   6     -19.749  13.384  50.350  1.00  0.00      SYST C  
+ATOM    181  N   UNL X   6     -16.806  13.973  48.798  1.00  0.00      SYST N  
+ATOM    182  C   UNL X   6     -15.528  13.364  49.166  1.00  0.00      SYST C  
+ATOM    183  C   UNL X   6     -15.254  13.610  50.642  1.00  0.00      SYST C  
+ATOM    184  O   UNL X   6     -15.970  14.382  51.273  1.00  0.00      SYST O  
+ATOM    185  C   UNL X   6     -14.387  13.934  48.312  1.00  0.00      SYST C  
+ATOM    186  C   UNL X   6     -14.253  15.446  48.432  1.00  0.00      SYST C  
+ATOM    187  O   UNL X   6     -14.355  16.119  47.398  1.00  0.00      SYST O  
+ATOM    188  O   UNL X   6     -14.044  15.950  49.529  1.00  0.00      SYST O  
+ATOM    189  N   UNL X   6     -14.233  12.962  51.194  1.00  0.00      SYST N  
+ATOM    190  C   UNL X   6     -13.974  13.070  52.628  1.00  0.00      SYST C  
+ATOM    191  C   UNL X   7     -12.472  16.565  52.350  1.00  0.00      SYST C  
+ATOM    192  C   UNL X   7     -13.682  17.454  52.624  1.00  0.00      SYST C  
+ATOM    193  O   UNL X   7     -13.744  18.143  53.639  1.00  0.00      SYST O  
+ATOM    194  N   UNL X   7     -14.654  17.418  51.720  1.00  0.00      SYST N  
+ATOM    195  C   UNL X   7     -15.884  18.188  51.892  1.00  0.00      SYST C  
+ATOM    196  C   UNL X   7     -16.596  17.807  53.181  1.00  0.00      SYST C  
+ATOM    197  O   UNL X   7     -17.035  18.678  53.922  1.00  0.00      SYST O  
+ATOM    198  C   UNL X   7     -16.828  17.958  50.709  1.00  0.00      SYST C  
+ATOM    199  C   UNL X   7     -16.282  18.415  49.368  1.00  0.00      SYST C  
+ATOM    200  C   UNL X   7     -17.321  18.222  48.267  1.00  0.00      SYST C  
+ATOM    201  C   UNL X   7     -16.734  18.502  46.895  1.00  0.00      SYST C  
+ATOM    202  N   UNL X   7     -17.701  18.160  45.814  1.00  0.00      SYST N  
+ATOM    203  N   UNL X   7     -16.706  16.508  53.449  1.00  0.00      SYST N  
+ATOM    204  C   UNL X   7     -17.409  16.033  54.639  1.00  0.00      SYST C  
+ATOM    205  C   UNL X   8      -9.378  13.182  52.112  1.00  0.00      SYST C  
+ATOM    206  C   UNL X   8     -10.054  13.489  50.779  1.00  0.00      SYST C  
+ATOM    207  O   UNL X   8     -11.091  12.906  50.449  1.00  0.00      SYST O  
+ATOM    208  N   UNL X   8      -9.469  14.400  50.011  1.00  0.00      SYST N  
+ATOM    209  CA  UNL X   8     -10.080  14.828  48.756  1.00  0.00      SYST C  
+ATOM    210  C   UNL X   8      -9.982  13.726  47.708  1.00  0.00      SYST C  
+ATOM    211  O   UNL X   8     -10.648  13.777  46.673  1.00  0.00      SYST O  
+ATOM    212  C   UNL X   8      -9.393  16.089  48.229  1.00  0.00      SYST C  
+ATOM    213  O   UNL X   8      -8.167  15.761  47.600  1.00  0.00      SYST O  
+ATOM    214  N   UNL X   8      -9.141  12.728  47.971  1.00  0.00      SYST N  
+ATOM    215  C   UNL X   8      -9.015  11.596  47.060  1.00  0.00      SYST C  
+ATOM    216  C   UNL X   8      -9.832  10.407  47.519  1.00  0.00      SYST C  
+ATOM    217  O   UNL X   8      -9.682   9.305  47.000  1.00  0.00      SYST O  
+ATOM    218  C   UNL X   8      -7.551  11.183  46.905  1.00  0.00      SYST C  
+ATOM    219  C   UNL X   8      -6.792  12.100  45.972  1.00  0.00      SYST C  
+ATOM    220  O   UNL X   8      -5.579  12.262  46.087  1.00  0.00      SYST O  
+ATOM    221  N   UNL X   8      -7.509  12.703  45.034  1.00  0.00      SYST N  
+ATOM    222  N   UNL X   8     -10.701  10.635  48.495  1.00  0.00      SYST N  
+ATOM    223  C   UNL X   8     -11.592   9.587  48.970  1.00  0.00      SYST C  
+ATOM    224  C   UNL X   8     -13.039  10.020  48.744  1.00  0.00      SYST C  
+ATOM    225  O   UNL X   8     -13.509  10.955  49.384  1.00  0.00      SYST O  
+ATOM    226  N   UNL X   8     -13.735   9.339  47.839  1.00  0.00      SYST N  
+ATOM    227  C   UNL X   8     -15.101   9.719  47.476  1.00  0.00      SYST C  
+ATOM    228  C   UNL X   8     -16.115   8.863  48.217  1.00  0.00      SYST C  
+ATOM    229  O   UNL X   8     -15.858   7.690  48.463  1.00  0.00      SYST O  
+ATOM    230  C   UNL X   8     -15.308   9.558  45.968  1.00  0.00      SYST C  
+ATOM    231  C   UNL X   8     -14.182  10.140  45.109  1.00  0.00      SYST C  
+ATOM    232  C   UNL X   8     -14.353   9.758  43.642  1.00  0.00      SYST C  
+ATOM    233  C   UNL X   8     -14.184  11.649  45.294  1.00  0.00      SYST C  
+ATOM    234  N   UNL X   8     -17.259   9.454  48.562  1.00  0.00      SYST N  
+ATOM    235  C   UNL X   8     -18.334   8.743  49.243  1.00  0.00      SYST C  
+ATOM    236  C   UNL X   9     -10.181   5.757  46.326  1.00  0.00      SYST C  
+ATOM    237  C   UNL X   9     -10.047   6.201  44.872  1.00  0.00      SYST C  
+ATOM    238  O   UNL X   9     -10.261   5.400  43.963  1.00  0.00      SYST O  
+ATOM    239  N   UNL X   9      -9.706   7.470  44.652  1.00  0.00      SYST N  
+ATOM    240  C   UNL X   9      -9.505   7.967  43.294  1.00  0.00      SYST C  
+ATOM    241  C   UNL X   9      -8.155   8.661  43.128  1.00  0.00      SYST C  
+ATOM    242  O   UNL X   9      -7.370   8.765  44.070  1.00  0.00      SYST O  
+ATOM    243  C   UNL X   9     -10.634   8.934  42.902  1.00  0.00      SYST C  
+ATOM    244  S   UNL X   9     -10.680  10.496  43.828  1.00  0.00      SYST S  
+ATOM    245  N   UNL X   9      -7.903   9.125  41.905  1.00  0.00      SYST N  
+ATOM    246  C   UNL X   9      -6.700   9.878  41.561  1.00  0.00      SYST C  
+ATOM    247  C   UNL X   9      -5.435   9.050  41.716  1.00  0.00      SYST C  
+ATOM    248  O   UNL X   9      -4.772   9.083  42.756  1.00  0.00      SYST O  
+ATOM    249  C   UNL X   9      -6.586  11.137  42.421  1.00  0.00      SYST C  
+ATOM    250  C   UNL X   9      -5.478  12.067  41.953  1.00  0.00      SYST C  
+ATOM    251  O   UNL X   9      -4.832  11.784  40.942  1.00  0.00      SYST O  
+ATOM    252  O   UNL X   9      -5.264  13.085  42.615  1.00  0.00      SYST O  
+ATOM    253  N   UNL X   9      -5.094   8.311  40.668  1.00  0.00      SYST N  
+ATOM    254  C   UNL X   9      -3.884   7.507  40.678  1.00  0.00      SYST C  
+ATOM    255  H   UNL X   1     -19.806  20.537  36.846  1.00  0.00      SYST H  
+ATOM    256  H   UNL X   1     -21.016  21.672  37.397  1.00  0.00      SYST H  
+ATOM    257  H   UNL X   1     -21.503  20.145  36.701  1.00  0.00      SYST H  
+ATOM    258  H   UNL X   1     -18.825  19.451  38.437  1.00  0.00      SYST H  
+ATOM    259  H   UNL X   1     -20.289  19.118  40.932  1.00  0.00      SYST H  
+ATOM    260  H   UNL X   1     -18.466  17.069  39.653  1.00  0.00      SYST H  
+ATOM    261  H   UNL X   1     -20.699  17.061  38.742  1.00  0.00      SYST H  
+ATOM    262  H   UNL X   1     -21.364  17.013  40.391  1.00  0.00      SYST H  
+ATOM    263  H   UNL X   1     -19.810  16.976  42.341  1.00  0.00      SYST H  
+ATOM    264  H   UNL X   1     -18.093  17.156  42.068  1.00  0.00      SYST H  
+ATOM    265  H   UNL X   1     -18.900  15.674  41.614  1.00  0.00      SYST H  
+ATOM    266  H   UNL X   1     -19.787  14.845  39.083  1.00  0.00      SYST H  
+ATOM    267  H   UNL X   1     -21.513  14.845  39.354  1.00  0.00      SYST H  
+ATOM    268  H   UNL X   1     -20.415  14.823  40.713  1.00  0.00      SYST H  
+ATOM    269  H   UNL X   1     -17.088  19.289  39.421  1.00  0.00      SYST H  
+ATOM    270  H   UNL X   1     -15.523  19.266  41.714  1.00  0.00      SYST H  
+ATOM    271  H   UNL X   1     -16.057  20.934  41.439  1.00  0.00      SYST H  
+ATOM    272  H   UNL X   1     -13.825  21.482  41.228  1.00  0.00      SYST H  
+ATOM    273  H   UNL X   1     -12.646  20.665  38.655  1.00  0.00      SYST H  
+ATOM    274  H   UNL X   1     -12.658  23.454  39.769  1.00  0.00      SYST H  
+ATOM    275  H   UNL X   1     -13.711  22.845  38.462  1.00  0.00      SYST H  
+ATOM    276  H   UNL X   1     -11.773  22.471  37.077  1.00  0.00      SYST H  
+ATOM    277  H   UNL X   1     -10.740  23.112  38.323  1.00  0.00      SYST H  
+ATOM    278  H   UNL X   1     -10.280  21.396  38.536  1.00  0.00      SYST H  
+ATOM    279  H   UNL X   1      -9.022  20.932  41.170  1.00  0.00      SYST H  
+ATOM    280  H   UNL X   1      -8.327  21.971  39.949  1.00  0.00      SYST H  
+ATOM    281  H   UNL X   1      -8.409  20.246  39.685  1.00  0.00      SYST H  
+ATOM    282  H   UNL X   2      -4.917  21.169  38.062  1.00  0.00      SYST H  
+ATOM    283  H   UNL X   2      -4.965  20.088  39.434  1.00  0.00      SYST H  
+ATOM    284  H   UNL X   2      -6.432  20.853  38.874  1.00  0.00      SYST H  
+ATOM    285  H   UNL X   2      -6.780  18.327  39.080  1.00  0.00      SYST H  
+ATOM    286  H   UNL X   2      -5.906  16.649  36.991  1.00  0.00      SYST H  
+ATOM    287  H   UNL X   2      -6.784  15.675  38.994  1.00  0.00      SYST H  
+ATOM    288  H   UNL X   2      -7.895  15.273  37.670  1.00  0.00      SYST H  
+ATOM    289  H   UNL X   2     -10.105  16.239  37.594  1.00  0.00      SYST H  
+ATOM    290  H   UNL X   2      -7.534  17.187  40.743  1.00  0.00      SYST H  
+ATOM    291  H   UNL X   2     -11.946  17.214  38.799  1.00  0.00      SYST H  
+ATOM    292  H   UNL X   2      -9.373  18.165  41.953  1.00  0.00      SYST H  
+ATOM    293  H   UNL X   2     -12.698  18.325  40.768  1.00  0.00      SYST H  
+ATOM    294  H   UNL X   2      -7.970  19.270  36.884  1.00  0.00      SYST H  
+ATOM    295  H   UNL X   2      -9.497  18.148  34.614  1.00  0.00      SYST H  
+ATOM    296  H   UNL X   2      -8.957  19.809  34.674  1.00  0.00      SYST H  
+ATOM    297  H   UNL X   2     -10.190  19.251  35.779  1.00  0.00      SYST H  
+ATOM    298  H   UNL X   3     -12.436  19.527  35.015  1.00  0.00      SYST H  
+ATOM    299  H   UNL X   3     -12.360  19.203  36.730  1.00  0.00      SYST H  
+ATOM    300  H   UNL X   3     -13.606  20.249  36.093  1.00  0.00      SYST H  
+ATOM    301  H   UNL X   3     -14.663  18.448  37.557  1.00  0.00      SYST H  
+ATOM    302  H   UNL X   3     -15.400  16.205  35.834  1.00  0.00      SYST H  
+ATOM    303  H   UNL X   3     -15.603  16.411  38.845  1.00  0.00      SYST H  
+ATOM    304  H   UNL X   3     -16.220  14.102  37.029  1.00  0.00      SYST H  
+ATOM    305  H   UNL X   3     -17.396  15.056  37.901  1.00  0.00      SYST H  
+ATOM    306  H   UNL X   3     -16.254  14.063  38.775  1.00  0.00      SYST H  
+ATOM    307  H   UNL X   3     -13.781  14.767  37.118  1.00  0.00      SYST H  
+ATOM    308  H   UNL X   3     -13.850  14.719  38.863  1.00  0.00      SYST H  
+ATOM    309  H   UNL X   3     -13.313  16.169  38.050  1.00  0.00      SYST H  
+ATOM    310  H   UNL X   3     -17.459  15.970  35.186  1.00  0.00      SYST H  
+ATOM    311  H   UNL X   3     -19.534  17.648  36.459  1.00  0.00      SYST H  
+ATOM    312  H   UNL X   3     -19.839  16.031  35.873  1.00  0.00      SYST H  
+ATOM    313  H   UNL X   3     -19.491  17.318  34.744  1.00  0.00      SYST H  
+ATOM    314  H   UNL X   4     -23.327   9.363  35.648  1.00  0.00      SYST H  
+ATOM    315  H   UNL X   4     -22.209   8.398  36.583  1.00  0.00      SYST H  
+ATOM    316  H   UNL X   4     -21.926   8.658  34.878  1.00  0.00      SYST H  
+ATOM    317  H   UNL X   4     -19.839   9.237  36.314  1.00  0.00      SYST H  
+ATOM    318  H   UNL X   4     -19.800  12.185  36.480  1.00  0.00      SYST H  
+ATOM    319  H   UNL X   4     -17.956  10.207  37.789  1.00  0.00      SYST H  
+ATOM    320  H   UNL X   4     -19.210  11.120  38.595  1.00  0.00      SYST H  
+ATOM    321  H   UNL X   4     -17.834  11.946  37.905  1.00  0.00      SYST H  
+ATOM    322  H   UNL X   4     -18.391  13.277  35.195  1.00  0.00      SYST H  
+ATOM    323  H   UNL X   4     -17.594  12.954  32.826  1.00  0.00      SYST H  
+ATOM    324  H   UNL X   4     -16.594  11.673  33.496  1.00  0.00      SYST H  
+ATOM    325  H   UNL X   4     -14.552  12.286  33.556  1.00  0.00      SYST H  
+ATOM    326  H   UNL X   4     -13.936  15.004  34.486  1.00  0.00      SYST H  
+ATOM    327  H   UNL X   4     -12.264  12.509  34.480  1.00  0.00      SYST H  
+ATOM    328  H   UNL X   4     -12.954  13.357  35.881  1.00  0.00      SYST H  
+ATOM    329  H   UNL X   4     -11.383  14.961  35.871  1.00  0.00      SYST H  
+ATOM    330  H   UNL X   4     -11.091  14.808  34.141  1.00  0.00      SYST H  
+ATOM    331  H   UNL X   4      -9.181  14.010  35.399  1.00  0.00      SYST H  
+ATOM    332  H   UNL X   4      -9.962  12.695  34.524  1.00  0.00      SYST H  
+ATOM    333  H   UNL X   4     -11.040  11.943  36.517  1.00  0.00      SYST H  
+ATOM    334  H   UNL X   4     -10.392  13.314  37.412  1.00  0.00      SYST H  
+ATOM    335  H   UNL X   4      -8.806  11.172  36.190  1.00  0.00      SYST H  
+ATOM    336  H   UNL X   4      -9.123  11.341  37.817  1.00  0.00      SYST H  
+ATOM    337  H   UNL X   4      -8.197  12.477  37.026  1.00  0.00      SYST H  
+ATOM    338  H   UNL X   4     -13.246  16.417  33.048  1.00  0.00      SYST H  
+ATOM    339  H   UNL X   4     -11.921  15.438  30.591  1.00  0.00      SYST H  
+ATOM    340  H   UNL X   4     -11.441  16.901  31.418  1.00  0.00      SYST H  
+ATOM    341  H   UNL X   4     -12.991  16.819  30.614  1.00  0.00      SYST H  
+ATOM    342  H   UNL X   5     -11.572   0.798  44.135  1.00  0.00      SYST H  
+ATOM    343  H   UNL X   5     -11.665   2.376  44.879  1.00  0.00      SYST H  
+ATOM    344  H   UNL X   5     -10.344   1.995  43.801  1.00  0.00      SYST H  
+ATOM    345  H   UNL X   5     -11.460   4.212  43.015  1.00  0.00      SYST H  
+ATOM    346  H   UNL X   5     -13.895   4.029  41.654  1.00  0.00      SYST H  
+ATOM    347  H   UNL X   5     -12.645   6.154  42.227  1.00  0.00      SYST H  
+ATOM    348  H   UNL X   5     -14.674   6.123  40.823  1.00  0.00      SYST H  
+ATOM    349  H   UNL X   5     -13.645   5.827  39.406  1.00  0.00      SYST H  
+ATOM    350  H   UNL X   5     -11.309   5.512  39.591  1.00  0.00      SYST H  
+ATOM    351  H   UNL X   5     -10.508   5.544  41.143  1.00  0.00      SYST H  
+ATOM    352  H   UNL X   5     -11.147   7.019  40.460  1.00  0.00      SYST H  
+ATOM    353  H   UNL X   5     -13.648   8.297  41.075  1.00  0.00      SYST H  
+ATOM    354  H   UNL X   5     -14.346   8.128  39.482  1.00  0.00      SYST H  
+ATOM    355  H   UNL X   5     -12.618   7.983  39.699  1.00  0.00      SYST H  
+ATOM    356  H   UNL X   5     -14.378   3.605  39.471  1.00  0.00      SYST H  
+ATOM    357  H   UNL X   5     -12.156   2.431  37.912  1.00  0.00      SYST H  
+ATOM    358  H   UNL X   5     -13.459   3.336  37.179  1.00  0.00      SYST H  
+ATOM    359  H   UNL X   5     -13.776   1.777  37.901  1.00  0.00      SYST H  
+ATOM    360  H   UNL X   6     -15.720   7.839  31.689  1.00  0.00      SYST H  
+ATOM    361  H   UNL X   6     -15.613   9.209  32.769  1.00  0.00      SYST H  
+ATOM    362  H   UNL X   6     -17.165   8.480  32.433  1.00  0.00      SYST H  
+ATOM    363  H   UNL X   6     -16.935   8.582  34.967  1.00  0.00      SYST H  
+ATOM    364  H   UNL X   6     -15.806   6.049  35.905  1.00  0.00      SYST H  
+ATOM    365  H   UNL X   6     -14.738   7.194  37.803  1.00  0.00      SYST H  
+ATOM    366  H   UNL X   6     -15.247   8.745  37.090  1.00  0.00      SYST H  
+ATOM    367  H   UNL X   6     -13.821   8.379  35.205  1.00  0.00      SYST H  
+ATOM    368  H   UNL X   6     -13.327   6.827  35.849  1.00  0.00      SYST H  
+ATOM    369  H   UNL X   6     -11.588   6.757  37.168  1.00  0.00      SYST H  
+ATOM    370  H   UNL X   6     -10.859   8.108  37.911  1.00  0.00      SYST H  
+ATOM    371  H   UNL X   6     -16.350   5.708  38.306  1.00  0.00      SYST H  
+ATOM    372  H   UNL X   6     -19.072   5.616  38.721  1.00  0.00      SYST H  
+ATOM    373  H   UNL X   6     -18.525   5.407  41.145  1.00  0.00      SYST H  
+ATOM    374  H   UNL X   6     -16.851   5.805  40.723  1.00  0.00      SYST H  
+ATOM    375  H   UNL X   6     -20.593   6.966  39.614  1.00  0.00      SYST H  
+ATOM    376  H   UNL X   6     -19.789   9.758  40.100  1.00  0.00      SYST H  
+ATOM    377  H   UNL X   6     -22.530   8.618  39.774  1.00  0.00      SYST H  
+ATOM    378  H   UNL X   6     -21.481   9.333  38.470  1.00  0.00      SYST H  
+ATOM    379  H   UNL X   6     -23.174  10.873  38.956  1.00  0.00      SYST H  
+ATOM    380  H   UNL X   6     -22.311  10.699  41.815  1.00  0.00      SYST H  
+ATOM    381  H   UNL X   6     -23.813  10.093  41.158  1.00  0.00      SYST H  
+ATOM    382  H   UNL X   6     -23.493  11.811  41.166  1.00  0.00      SYST H  
+ATOM    383  H   UNL X   6     -20.574  11.645  40.247  1.00  0.00      SYST H  
+ATOM    384  H   UNL X   6     -21.777  12.757  39.637  1.00  0.00      SYST H  
+ATOM    385  H   UNL X   6     -20.918  11.707  38.535  1.00  0.00      SYST H  
+ATOM    386  H   UNL X   6     -19.822  10.574  42.117  1.00  0.00      SYST H  
+ATOM    387  H   UNL X   6     -21.134   9.013  44.259  1.00  0.00      SYST H  
+ATOM    388  H   UNL X   6     -19.220   9.230  45.652  1.00  0.00      SYST H  
+ATOM    389  H   UNL X   6     -18.430  10.269  44.443  1.00  0.00      SYST H  
+ATOM    390  H   UNL X   6     -17.372   8.195  44.302  1.00  0.00      SYST H  
+ATOM    391  H   UNL X   6     -18.488   8.322  42.920  1.00  0.00      SYST H  
+ATOM    392  H   UNL X   6     -18.901   5.482  46.481  1.00  0.00      SYST H  
+ATOM    393  H   UNL X   6     -18.844   7.215  46.697  1.00  0.00      SYST H  
+ATOM    394  H   UNL X   6     -17.457   6.369  46.055  1.00  0.00      SYST H  
+ATOM    395  H   UNL X   6     -21.469  10.335  46.272  1.00  0.00      SYST H  
+ATOM    396  H   UNL X   6     -22.647  12.778  45.409  1.00  0.00      SYST H  
+ATOM    397  H   UNL X   6     -22.485  11.493  48.134  1.00  0.00      SYST H  
+ATOM    398  H   UNL X   6     -23.857  11.489  47.008  1.00  0.00      SYST H  
+ATOM    399  H   UNL X   6     -24.121  13.855  47.314  1.00  0.00      SYST H  
+ATOM    400  H   UNL X   6     -22.763  13.796  48.495  1.00  0.00      SYST H  
+ATOM    401  H   UNL X   6     -19.958  12.042  47.600  1.00  0.00      SYST H  
+ATOM    402  H   UNL X   6     -18.998  14.770  47.295  1.00  0.00      SYST H  
+ATOM    403  H   UNL X   6     -20.595  14.934  49.166  1.00  0.00      SYST H  
+ATOM    404  H   UNL X   6     -17.852  15.113  49.953  1.00  0.00      SYST H  
+ATOM    405  H   UNL X   6     -18.787  12.946  50.515  1.00  0.00      SYST H  
+ATOM    406  H   UNL X   6     -20.423  12.637  49.985  1.00  0.00      SYST H  
+ATOM    407  H   UNL X   6     -20.122  13.783  51.270  1.00  0.00      SYST H  
+ATOM    408  H   UNL X   6     -16.975  14.914  49.032  1.00  0.00      SYST H  
+ATOM    409  H   UNL X   6     -15.583  12.311  48.986  1.00  0.00      SYST H  
+ATOM    410  H   UNL X   6     -14.572  13.688  47.287  1.00  0.00      SYST H  
+ATOM    411  H   UNL X   6     -13.475  13.502  48.667  1.00  0.00      SYST H  
+ATOM    412  H   UNL X   6     -13.647  12.405  50.632  1.00  0.00      SYST H  
+ATOM    413  H   UNL X   6     -14.705  13.711  53.075  1.00  0.00      SYST H  
+ATOM    414  H   UNL X   6     -12.998  13.479  52.784  1.00  0.00      SYST H  
+ATOM    415  H   UNL X   6     -14.030  12.099  53.075  1.00  0.00      SYST H  
+ATOM    416  H   UNL X   7     -12.610  16.050  51.422  1.00  0.00      SYST H  
+ATOM    417  H   UNL X   7     -12.367  15.852  53.141  1.00  0.00      SYST H  
+ATOM    418  H   UNL X   7     -11.591  17.169  52.295  1.00  0.00      SYST H  
+ATOM    419  H   UNL X   7     -14.544  16.860  50.916  1.00  0.00      SYST H  
+ATOM    420  H   UNL X   7     -15.613  19.222  51.940  1.00  0.00      SYST H  
+ATOM    421  H   UNL X   7     -17.737  18.490  50.898  1.00  0.00      SYST H  
+ATOM    422  H   UNL X   7     -16.970  16.900  50.635  1.00  0.00      SYST H  
+ATOM    423  H   UNL X   7     -15.409  17.843  49.131  1.00  0.00      SYST H  
+ATOM    424  H   UNL X   7     -16.039  19.455  49.432  1.00  0.00      SYST H  
+ATOM    425  H   UNL X   7     -18.138  18.891  48.439  1.00  0.00      SYST H  
+ATOM    426  H   UNL X   7     -17.651  17.204  48.290  1.00  0.00      SYST H  
+ATOM    427  H   UNL X   7     -15.848  17.916  46.769  1.00  0.00      SYST H  
+ATOM    428  H   UNL X   7     -16.509  19.546  46.830  1.00  0.00      SYST H  
+ATOM    429  H   UNL X   7     -17.927  17.166  45.862  1.00  0.00      SYST H  
+ATOM    430  H   UNL X   7     -17.285  18.371  44.907  1.00  0.00      SYST H  
+ATOM    431  H   UNL X   7     -18.553  18.708  45.934  1.00  0.00      SYST H  
+ATOM    432  H   UNL X   7     -16.305  15.853  52.833  1.00  0.00      SYST H  
+ATOM    433  H   UNL X   7     -17.779  16.870  55.193  1.00  0.00      SYST H  
+ATOM    434  H   UNL X   7     -16.735  15.471  55.251  1.00  0.00      SYST H  
+ATOM    435  H   UNL X   7     -18.228  15.410  54.345  1.00  0.00      SYST H  
+ATOM    436  H   UNL X   8      -8.500  13.785  52.214  1.00  0.00      SYST H  
+ATOM    437  H   UNL X   8      -9.106  12.148  52.144  1.00  0.00      SYST H  
+ATOM    438  H   UNL X   8     -10.054  13.398  52.913  1.00  0.00      SYST H  
+ATOM    439  H   UNL X   8      -8.611  14.793  50.292  1.00  0.00      SYST H  
+ATOM    440  H   UNL X   8     -11.111  15.040  48.947  1.00  0.00      SYST H  
+ATOM    441  H   UNL X   8      -9.203  16.754  49.046  1.00  0.00      SYST H  
+ATOM    442  H   UNL X   8     -10.034  16.558  47.513  1.00  0.00      SYST H  
+ATOM    443  H   UNL X   8      -7.578  15.335  48.242  1.00  0.00      SYST H  
+ATOM    444  H   UNL X   8      -8.597  12.754  48.791  1.00  0.00      SYST H  
+ATOM    445  H   UNL X   8      -9.395  11.916  46.112  1.00  0.00      SYST H  
+ATOM    446  H   UNL X   8      -7.514  10.187  46.515  1.00  0.00      SYST H  
+ATOM    447  H   UNL X   8      -7.090  11.242  47.869  1.00  0.00      SYST H  
+ATOM    448  H   UNL X   8      -8.479  12.545  44.978  1.00  0.00      SYST H  
+ATOM    449  H   UNL X   8      -7.071  13.309  44.393  1.00  0.00      SYST H  
+ATOM    450  H   UNL X   8     -10.744  11.529  48.905  1.00  0.00      SYST H  
+ATOM    451  H   UNL X   8     -11.426   9.422  50.014  1.00  0.00      SYST H  
+ATOM    452  H   UNL X   8     -11.399   8.681  48.435  1.00  0.00      SYST H  
+ATOM    453  H   UNL X   8     -13.321   8.560  47.402  1.00  0.00      SYST H  
+ATOM    454  H   UNL X   8     -15.245  10.743  47.751  1.00  0.00      SYST H  
+ATOM    455  H   UNL X   8     -16.220  10.049  45.701  1.00  0.00      SYST H  
+ATOM    456  H   UNL X   8     -15.328   8.506  45.773  1.00  0.00      SYST H  
+ATOM    457  H   UNL X   8     -13.240   9.738  45.419  1.00  0.00      SYST H  
+ATOM    458  H   UNL X   8     -15.286  10.138  43.281  1.00  0.00      SYST H  
+ATOM    459  H   UNL X   8     -14.342   8.692  43.547  1.00  0.00      SYST H  
+ATOM    460  H   UNL X   8     -13.552  10.176  43.069  1.00  0.00      SYST H  
+ATOM    461  H   UNL X   8     -15.128  12.045  44.983  1.00  0.00      SYST H  
+ATOM    462  H   UNL X   8     -13.404  12.082  44.704  1.00  0.00      SYST H  
+ATOM    463  H   UNL X   8     -14.022  11.882  46.326  1.00  0.00      SYST H  
+ATOM    464  H   UNL X   8     -17.383  10.407  48.349  1.00  0.00      SYST H  
+ATOM    465  H   UNL X   8     -18.045   7.725  49.400  1.00  0.00      SYST H  
+ATOM    466  H   UNL X   8     -19.219   8.773  48.642  1.00  0.00      SYST H  
+ATOM    467  H   UNL X   8     -18.528   9.209  50.187  1.00  0.00      SYST H  
+ATOM    468  H   UNL X   9     -10.457   4.724  46.359  1.00  0.00      SYST H  
+ATOM    469  H   UNL X   9     -10.934   6.343  46.810  1.00  0.00      SYST H  
+ATOM    470  H   UNL X   9      -9.246   5.893  46.828  1.00  0.00      SYST H  
+ATOM    471  H   UNL X   9      -9.588   8.081  45.415  1.00  0.00      SYST H  
+ATOM    472  H   UNL X   9      -9.519   7.116  42.645  1.00  0.00      SYST H  
+ATOM    473  H   UNL X   9     -11.566   8.432  43.055  1.00  0.00      SYST H  
+ATOM    474  H   UNL X   9     -10.452   9.202  41.882  1.00  0.00      SYST H  
+ATOM    475  H   UNL X   9     -10.909  10.237  45.143  1.00  0.00      SYST H  
+ATOM    476  H   UNL X   9      -8.563   8.951  41.195  1.00  0.00      SYST H  
+ATOM    477  H   UNL X   9      -6.795  10.149  40.530  1.00  0.00      SYST H  
+ATOM    478  H   UNL X   9      -6.385  10.845  43.431  1.00  0.00      SYST H  
+ATOM    479  H   UNL X   9      -7.511  11.669  42.341  1.00  0.00      SYST H  
+ATOM    480  H   UNL X   9      -5.671   8.307  39.870  1.00  0.00      SYST H  
+ATOM    481  H   UNL X   9      -3.383   7.629  41.615  1.00  0.00      SYST H  
+ATOM    482  H   UNL X   9      -3.239   7.823  39.885  1.00  0.00      SYST H  
+ATOM    483  H   UNL X   9      -4.139   6.477  40.541  1.00  0.00      SYST H  
+CONECT    1    2   22   23   24
+CONECT    2    1    3    4
+CONECT    3    2   25   26   27
+CONECT    4    2    5    6
+CONECT    5    4
+CONECT    6    4    7   10
+CONECT    7    6    8   28
+CONECT    8    7    9   11
+CONECT    9    8   10   29
+CONECT   10    6    9   30
+CONECT   11    8   12   15
+CONECT   12   11   13   31
+CONECT   13   12   14
+CONECT   14   13   15   32
+CONECT   15   11   14   16
+CONECT   16   15   17   21
+CONECT   17   16   18   33
+CONECT   18   17   19   34
+CONECT   19   18   20   35
+CONECT   20   19   21   36
+CONECT   21   16   20   37
+CONECT   22    1
+CONECT   23    1
+CONECT   24    1
+CONECT   25    3
+CONECT   26    3
+CONECT   27    3
+CONECT   28    7
+CONECT   29    9
+CONECT   30   10
+CONECT   31   12
+CONECT   32   14
+CONECT   33   17
+CONECT   34   18
+CONECT   35   19
+CONECT   36   20
+CONECT   37   21
+CONECT   38   39  255  256  257
+CONECT   39   38   40   41
+CONECT   40   39
+CONECT   41   39   42  258
+CONECT   42   41   43   45  259
+CONECT   43   42   44   49
+CONECT   44   43
+CONECT   45   42   46   47  260
+CONECT   46   45   48  261  262
+CONECT   47   45  263  264  265
+CONECT   48   46  266  267  268
+CONECT   49   43   50  269
+CONECT   50   49   51  270  271
+CONECT   51   50   52   53
+CONECT   52   51
+CONECT   53   51   54  272
+CONECT   54   53   55   57  273
+CONECT   55   54   56   62
+CONECT   56   55
+CONECT   57   54   58  274  275
+CONECT   58   57   59  276  277
+CONECT   59   58   60   61
+CONECT   60   59
+CONECT   61   59
+CONECT   62   55   63  278
+CONECT   63   62  279  280  281
+CONECT   64   65  282  283  284
+CONECT   65   64   66   67
+CONECT   66   65
+CONECT   67   65   68  285
+CONECT   68   67   69   71  286
+CONECT   69   68   70   79
+CONECT   70   69
+CONECT   71   68   72  287  288
+CONECT   72   71   73   74
+CONECT   73   72   75  289
+CONECT   74   72   76  290
+CONECT   75   73   77  291
+CONECT   76   74   77  292
+CONECT   77   75   76   78
+CONECT   78   77  293
+CONECT   79   69   80  294
+CONECT   80   79  295  296  297
+CONECT   81   82  298  299  300
+CONECT   82   81   83   84
+CONECT   83   82
+CONECT   84   82   85  301
+CONECT   85   84   86   88  302
+CONECT   86   85   87   91
+CONECT   87   86
+CONECT   88   85   89   90  303
+CONECT   89   88  304  305  306
+CONECT   90   88  307  308  309
+CONECT   91   86   92  310
+CONECT   92   91  311  312  313
+CONECT   93   94  314  315  316
+CONECT   94   93   95   96
+CONECT   95   94
+CONECT   96   94   97  317
+CONECT   97   96   98  100  318
+CONECT   98   97   99  101
+CONECT   99   98
+CONECT  100   97  319  320  321
+CONECT  101   98  102  322
+CONECT  102  101  103  323  324
+CONECT  103  102  104  105
+CONECT  104  103
+CONECT  105  103  106  325
+CONECT  106  105  107  109  326
+CONECT  107  106  108  114
+CONECT  108  107
+CONECT  109  106  110  327  328
+CONECT  110  109  111  329  330
+CONECT  111  110  112  331  332
+CONECT  112  111  113  333  334
+CONECT  113  112  335  336  337
+CONECT  114  107  115  338
+CONECT  115  114  339  340  341
+CONECT  116  117  342  343  344
+CONECT  117  116  118  119
+CONECT  118  117
+CONECT  119  117  120  345
+CONECT  120  119  121  123  346
+CONECT  121  120  122  127
+CONECT  122  121
+CONECT  123  120  124  125  347
+CONECT  124  123  126  348  349
+CONECT  125  123  350  351  352
+CONECT  126  124  353  354  355
+CONECT  127  121  128  356
+CONECT  128  127  357  358  359
+CONECT  129  130  360  361  362
+CONECT  130  129  131  132
+CONECT  131  130
+CONECT  132  130  133  363
+CONECT  133  132  134  136  364
+CONECT  134  133  135  141
+CONECT  135  134
+CONECT  136  133  137  365  366
+CONECT  137  136  138  367  368
+CONECT  138  137  139  140
+CONECT  139  138
+CONECT  140  138  369  370
+CONECT  141  134  142  371
+CONECT  142  141  143  145  372
+CONECT  143  142  144  149
+CONECT  144  143
+CONECT  145  142  146  373  374
+CONECT  146  145  147  148
+CONECT  147  146
+CONECT  148  146
+CONECT  149  143  150  375
+CONECT  150  149  151  153  376
+CONECT  151  150  152  157
+CONECT  152  151
+CONECT  153  150  154  377  378
+CONECT  154  153  155  156  379
+CONECT  155  154  380  381  382
+CONECT  156  154  383  384  385
+CONECT  157  151  158  386
+CONECT  158  157  159  161  387
+CONECT  159  158  160  165
+CONECT  160  159
+CONECT  161  158  162  388  389
+CONECT  162  161  163  390  391
+CONECT  163  162  164
+CONECT  164  163  392  393  394
+CONECT  165  159  166  395
+CONECT  166  165  167  169  396
+CONECT  167  166  168  174
+CONECT  168  167
+CONECT  169  166  170  397  398
+CONECT  170  169  171  399  400
+CONECT  171  170  172  173
+CONECT  172  171
+CONECT  173  171
+CONECT  174  167  175  401
+CONECT  175  174  176  178  402
+CONECT  176  175  177  181
+CONECT  177  176
+CONECT  178  175  179  180  403
+CONECT  179  178  404
+CONECT  180  178  405  406  407
+CONECT  181  176  182  408
+CONECT  182  181  183  185  409
+CONECT  183  182  184  189
+CONECT  184  183
+CONECT  185  182  186  410  411
+CONECT  186  185  187  188
+CONECT  187  186
+CONECT  188  186
+CONECT  189  183  190  412
+CONECT  190  189  413  414  415
+CONECT  191  192  416  417  418
+CONECT  192  191  193  194
+CONECT  193  192
+CONECT  194  192  195  419
+CONECT  195  194  196  198  420
+CONECT  196  195  197  203
+CONECT  197  196
+CONECT  198  195  199  421  422
+CONECT  199  198  200  423  424
+CONECT  200  199  201  425  426
+CONECT  201  200  202  427  428
+CONECT  202  201  429  430  431
+CONECT  203  196  204  432
+CONECT  204  203  433  434  435
+CONECT  205  206  436  437  438
+CONECT  206  205  207  208
+CONECT  207  206
+CONECT  208  206  209  439
+CONECT  209  208  210  212  440
+CONECT  210  209  211  214
+CONECT  211  210
+CONECT  212  209  213  441  442
+CONECT  213  212  443
+CONECT  214  210  215  444
+CONECT  215  214  216  218  445
+CONECT  216  215  217  222
+CONECT  217  216
+CONECT  218  215  219  446  447
+CONECT  219  218  220  221
+CONECT  220  219
+CONECT  221  219  448  449
+CONECT  222  216  223  450
+CONECT  223  222  224  451  452
+CONECT  224  223  225  226
+CONECT  225  224
+CONECT  226  224  227  453
+CONECT  227  226  228  230  454
+CONECT  228  227  229  234
+CONECT  229  228
+CONECT  230  227  231  455  456
+CONECT  231  230  232  233  457
+CONECT  232  231  458  459  460
+CONECT  233  231  461  462  463
+CONECT  234  228  235  464
+CONECT  235  234  465  466  467
+CONECT  236  237  468  469  470
+CONECT  237  236  238  239
+CONECT  238  237
+CONECT  239  237  240  471
+CONECT  240  239  241  243  472
+CONECT  241  240  242  245
+CONECT  242  241
+CONECT  243  240  244  473  474
+CONECT  244  243  475
+CONECT  245  241  246  476
+CONECT  246  245  247  249  477
+CONECT  247  246  248  253
+CONECT  248  247
+CONECT  249  246  250  478  479
+CONECT  250  249  251  252
+CONECT  251  250
+CONECT  252  250
+CONECT  253  247  254  480
+CONECT  254  253  481  482  483
+CONECT  255   38
+CONECT  256   38
+CONECT  257   38
+CONECT  258   41
+CONECT  259   42
+CONECT  260   45
+CONECT  261   46
+CONECT  262   46
+CONECT  263   47
+CONECT  264   47
+CONECT  265   47
+CONECT  266   48
+CONECT  267   48
+CONECT  268   48
+CONECT  269   49
+CONECT  270   50
+CONECT  271   50
+CONECT  272   53
+CONECT  273   54
+CONECT  274   57
+CONECT  275   57
+CONECT  276   58
+CONECT  277   58
+CONECT  278   62
+CONECT  279   63
+CONECT  280   63
+CONECT  281   63
+CONECT  282   64
+CONECT  283   64
+CONECT  284   64
+CONECT  285   67
+CONECT  286   68
+CONECT  287   71
+CONECT  288   71
+CONECT  289   73
+CONECT  290   74
+CONECT  291   75
+CONECT  292   76
+CONECT  293   78
+CONECT  294   79
+CONECT  295   80
+CONECT  296   80
+CONECT  297   80
+CONECT  298   81
+CONECT  299   81
+CONECT  300   81
+CONECT  301   84
+CONECT  302   85
+CONECT  303   88
+CONECT  304   89
+CONECT  305   89
+CONECT  306   89
+CONECT  307   90
+CONECT  308   90
+CONECT  309   90
+CONECT  310   91
+CONECT  311   92
+CONECT  312   92
+CONECT  313   92
+CONECT  314   93
+CONECT  315   93
+CONECT  316   93
+CONECT  317   96
+CONECT  318   97
+CONECT  319  100
+CONECT  320  100
+CONECT  321  100
+CONECT  322  101
+CONECT  323  102
+CONECT  324  102
+CONECT  325  105
+CONECT  326  106
+CONECT  327  109
+CONECT  328  109
+CONECT  329  110
+CONECT  330  110
+CONECT  331  111
+CONECT  332  111
+CONECT  333  112
+CONECT  334  112
+CONECT  335  113
+CONECT  336  113
+CONECT  337  113
+CONECT  338  114
+CONECT  339  115
+CONECT  340  115
+CONECT  341  115
+CONECT  342  116
+CONECT  343  116
+CONECT  344  116
+CONECT  345  119
+CONECT  346  120
+CONECT  347  123
+CONECT  348  124
+CONECT  349  124
+CONECT  350  125
+CONECT  351  125
+CONECT  352  125
+CONECT  353  126
+CONECT  354  126
+CONECT  355  126
+CONECT  356  127
+CONECT  357  128
+CONECT  358  128
+CONECT  359  128
+CONECT  360  129
+CONECT  361  129
+CONECT  362  129
+CONECT  363  132
+CONECT  364  133
+CONECT  365  136
+CONECT  366  136
+CONECT  367  137
+CONECT  368  137
+CONECT  369  140
+CONECT  370  140
+CONECT  371  141
+CONECT  372  142
+CONECT  373  145
+CONECT  374  145
+CONECT  375  149
+CONECT  376  150
+CONECT  377  153
+CONECT  378  153
+CONECT  379  154
+CONECT  380  155
+CONECT  381  155
+CONECT  382  155
+CONECT  383  156
+CONECT  384  156
+CONECT  385  156
+CONECT  386  157
+CONECT  387  158
+CONECT  388  161
+CONECT  389  161
+CONECT  390  162
+CONECT  391  162
+CONECT  392  164
+CONECT  393  164
+CONECT  394  164
+CONECT  395  165
+CONECT  396  166
+CONECT  397  169
+CONECT  398  169
+CONECT  399  170
+CONECT  400  170
+CONECT  401  174
+CONECT  402  175
+CONECT  403  178
+CONECT  404  179
+CONECT  405  180
+CONECT  406  180
+CONECT  407  180
+CONECT  408  181
+CONECT  409  182
+CONECT  410  185
+CONECT  411  185
+CONECT  412  189
+CONECT  413  190
+CONECT  414  190
+CONECT  415  190
+CONECT  416  191
+CONECT  417  191
+CONECT  418  191
+CONECT  419  194
+CONECT  420  195
+CONECT  421  198
+CONECT  422  198
+CONECT  423  199
+CONECT  424  199
+CONECT  425  200
+CONECT  426  200
+CONECT  427  201
+CONECT  428  201
+CONECT  429  202
+CONECT  430  202
+CONECT  431  202
+CONECT  432  203
+CONECT  433  204
+CONECT  434  204
+CONECT  435  204
+CONECT  436  205
+CONECT  437  205
+CONECT  438  205
+CONECT  439  208
+CONECT  440  209
+CONECT  441  212
+CONECT  442  212
+CONECT  443  213
+CONECT  444  214
+CONECT  445  215
+CONECT  446  218
+CONECT  447  218
+CONECT  448  221
+CONECT  449  221
+CONECT  450  222
+CONECT  451  223
+CONECT  452  223
+CONECT  453  226
+CONECT  454  227
+CONECT  455  230
+CONECT  456  230
+CONECT  457  231
+CONECT  458  232
+CONECT  459  232
+CONECT  460  232
+CONECT  461  233
+CONECT  462  233
+CONECT  463  233
+CONECT  464  234
+CONECT  465  235
+CONECT  466  235
+CONECT  467  235
+CONECT  468  236
+CONECT  469  236
+CONECT  470  236
+CONECT  471  239
+CONECT  472  240
+CONECT  473  243
+CONECT  474  243
+CONECT  475  244
+CONECT  476  245
+CONECT  477  246
+CONECT  478  249
+CONECT  479  249
+CONECT  480  253
+CONECT  481  254
+CONECT  482  254
+CONECT  483  254
+END

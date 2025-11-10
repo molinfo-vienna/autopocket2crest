@@ -79,26 +79,38 @@ You’ll need the following tools installed and accessible:
 ```bash
 conda create -n autopocket2crest python=3.10
 conda activate autopocket2crest
-conda install -c conda-forge mdanalysis rdkit openbabel pdbfixer openmm
+conda install -c conda-forge mdanalysis rdkit openbabel pdbfixer openmm crest
+```
+
+Alternatively you can also use the provided environment.yml file:
+
+```bash
+conda env create -f environment.yml
+```
+
+Then go into the downloaded autopocket2crest folder and type:
+
+```bash
+pip install .
 ```
 
 ## Usage
 
-Run AutoPocket2CREST directly from the command line:
+Run AutoPocket2CREST directly from the command line (the requried files need to be in the same Folder):
 
 ```bash
-python autopocket2crest.py <protein_file.pdb> <ligand_file.mol2> <PDB_ID>
+autopocket2crest <protein_file.pdb> <ligand_file.mol2> <PDB_ID>
 ```
 
 Example:
 
 ```bash
-python autopocket2crest.py 1ABC_protein.pdb 1ABC_ligand.mol2 1ABC
+autopocket2crest 1ABC_protein.pdb 1ABC_ligand.mol2 1ABC
 ```
 
 This will:
 
-1. Create a working directory /data/local/1ABC
+1. Create a working directory /pwd/1ABC
 
 2. Automatically extract and prepare the ligand pocket
 
@@ -115,7 +127,7 @@ AutoPocket2CREST
 ↓
 Pocket extraction → Hydrogenation → Cleanup → Constraint generation → CREST
 ↓
-Output: test_pocket_extended_h_fixed.pdb, constraints.inp, crest.out
+Output: test_pocket_extended_h_fixed.pdb, constraints.inp, crest.out, and the full crest conformer output
 
 ```
 

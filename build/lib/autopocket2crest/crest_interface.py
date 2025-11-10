@@ -23,9 +23,9 @@ def generate_constraints(xyz_file, backbone_indices):
     print("Constraint file created.")
     return "constraints.inp"
 
-def run_crest(xyz_file, constraint_file=None, charge=0):
+def run_crest(xyz_file, constraint_file=None, charge=0, temp="310", lvl_of_theory="gfnff", extra_crest_args="-squick"):
     """Run CREST conformer search."""
-    cmd = f"crest {xyz_file} -gfnff -chrg {charge} -gbsa h2o -squick --temp 310 --legacy"
+    cmd = f"crest {xyz_file} -{lvl_of_theory} -chrg {charge} -gbsa h2o {extra_crest_args} --temp {temp} --legacy"
     if constraint_file and os.path.exists(constraint_file):
         cmd += f" -cinp {constraint_file}"
     cmd += " > crest.out"

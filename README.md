@@ -88,7 +88,7 @@ Alternatively you can also use the provided environment.yml file:
 conda env create -f environment.yml
 ```
 
-Then go into the downloaded autopocket2crest folder and type:
+Make sure you are in the downloaded autopocket2crest folder and type:
 
 ```bash
 pip install .
@@ -110,7 +110,7 @@ autopocket2crest 1ABC_protein.pdb 1ABC_ligand.mol2 1ABC
 
 This will:
 
-1. Create a working directory /pwd/1ABC
+1. Create a working directory /<pwd>/1ABC
 
 2. Automatically extract and prepare the ligand pocket
 

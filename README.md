@@ -110,7 +110,7 @@ autopocket2crest 1ABC_protein.pdb 1ABC_ligand.mol2 1ABC
 
 This will:
 
-1. Create a working directory /<pwd>/1ABC
+1. Create a working directory /{pwd}/1ABC
 
 2. Automatically extract and prepare the ligand pocket
 

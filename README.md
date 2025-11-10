@@ -45,7 +45,7 @@ The pipeline ensures reproducible, chemically sound local environments ready for
 
 ---
 
-## Generated Output
+## Important Output
 
 | File | Purpose |
 |------|----------|

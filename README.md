@@ -50,11 +50,9 @@ The pipeline ensures reproducible, chemically sound local environments ready for
 | File | Purpose |
 |------|----------|
 | `test_pocket_extended_h_fixed.pdb` | Final CREST-ready pocket structure |
-| `test_pocket_extended_h_fixed.xyz` | XYZ file for CREST input |
-| `test_pocket_extended_h_fixed.mol2` | MOL2 version for compatibility |
 | `constraints.inp` | CREST constraint file |
 | `crest.out` | CREST output log |
-| `crest_conformers.pdb` | Best conformers in PDB format |
+| `crest_conformers_updated.pdb` | Conformers in PDB format |
 
 ---
 

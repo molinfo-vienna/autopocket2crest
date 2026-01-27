@@ -64,3 +64,51 @@ def cut_pocket(ligand, ligand_resname, u):
 
     pocket_extended.write("test_pocket_extended.pdb")
     print(f"Pocket size: {len(pocket_extended)} atoms.")
+    
+def fix_pdb_elements(input_pdb, output_pdb):
+    """
+    Fix missing element identifiers in a PDB file by inferring them
+    from the atom name column. Lines that already have an element
+    identifier are left unchanged.
+
+    Parameters
+    ----------
+    input_pdb : str
+        Path to the input PDB file
+    output_pdb : str
+        Path to the output PDB file with fixed element columns
+    """
+
+    def infer_element(atom_name):
+        # Remove digits and spaces
+        name = ''.join(c for c in atom_name if c.isalpha())
+
+        if not name:
+            return "  "
+
+        # Two-letter elements have a lowercase second letter in atom name
+        if len(name) >= 2 and name[1].islower():
+            return name[:2].capitalize()
+        else:
+            return name[0].upper()
+
+    with open(input_pdb, "r") as fin, open(output_pdb, "w") as fout:
+        for line in fin:
+            if line.startswith(("ATOM", "HETATM")):
+                # Make sure the line is long enough to contain element field
+                padded = line.rstrip("\n").ljust(78)
+
+                # Element field is columns 77–78 (0-based 76:78)
+                existing_element = padded[76:78].strip()
+
+                if existing_element:
+                    # Element already present → write original line unchanged
+                    fout.write(line)
+                else:
+                    atom_name = padded[12:16]
+                    element = infer_element(atom_name)
+
+                    fixed_line = padded[:76] + element.rjust(2) + padded[78:]
+                    fout.write(fixed_line + "\n")
+            else:
+                fout.write(line)

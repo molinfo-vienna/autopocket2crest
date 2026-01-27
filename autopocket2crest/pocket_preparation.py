@@ -1,6 +1,6 @@
 import os, time, MDAnalysis as mda
 from rdkit import Chem
-from .pdb_utils import filter_pdb_by_altloc, cut_pocket
+from .pdb_utils import filter_pdb_by_altloc, cut_pocket, fix_pdb_elements
 from .ligand_utils import get_ligand_name
 from .remove_unbonded import remove_unbonded
 from .crest_interface import generate_constraints, run_crest
@@ -16,7 +16,9 @@ def run_pipeline(protein_file, ligand_file, pdbid, run_crest_bool=True, base_dir
 
     cwd = os.getcwd()
     print(f"Current working directory: {cwd}")
-    filter_pdb_by_altloc(f"{base_dir}/{protein_file}", "prepared.pdb")
+    
+    fix_pdb_elements(f"{base_dir}/{protein_file}", f"{cwd}/pre_prepared.pdb")
+    filter_pdb_by_altloc(f"{cwd}/pre_prepared.pdb", "prepared.pdb")
     ligand_resname = get_ligand_name(f"{base_dir}/{ligand_file}", f"{base_dir}/{protein_file}")
     print(f"Ligand identified: {ligand_resname}")
 
@@ -62,6 +64,7 @@ def run_pipeline(protein_file, ligand_file, pdbid, run_crest_bool=True, base_dir
     cleanup_temp_files([
     f"{cwd}/test_pocket_extended.pdb",
     f"{cwd}/test_pocket_extended_h.pdb",
+    f"{cwd}/pre_prepared.pdb",
     f"{cwd}/prepared.pdb",
     f"{cwd}/.CHRG",
     f"{cwd}/.xcontrol.sample"

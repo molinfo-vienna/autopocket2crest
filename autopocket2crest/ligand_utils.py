@@ -31,7 +31,19 @@ def get_ligand_name(mol2_file, pdb_file):
                     if res not in typical_cofactor_names:
                         ligand_name = res
                         break
-
+    
+    if not ligand_name or ligand_name == "UNNAMED":
+        with open(mol2_file, 'r') as mol:
+            for line in mol:
+                if next_line:
+                    parts = line.split()
+                    if len(parts) > 7:
+                        ligand_name = parts[7]
+                        break
+                elif line.startswith("@<TRIPOS>ATOM"):
+                    next_line = True
+ 
+    
     if not ligand_name:
         print(f"Warning: No ligand name found for {mol2_file}, using 'UNNAMED'")
         ligand_name = "UNNAMED"

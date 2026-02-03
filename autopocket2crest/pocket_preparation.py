@@ -7,12 +7,12 @@ from .crest_interface import generate_constraints, run_crest
 from .transfer_pdb_info import transfer_pdb_info
 from .cleanup import cleanup_temp_files
 
-def run_pipeline(protein_file, ligand_file, pdbid, run_crest_bool=True, base_dir=".", temp="310", lvl_of_theory="gfnff", extra_crest_args="-squick"):
+def run_pipeline(protein_file, ligand_file, outdir, run_crest_bool=True, base_dir=".", temp="310", lvl_of_theory="gfnff", extra_crest_args="-squick"):
     """Full AutoPocket2CREST pipeline."""
     print("Starting AutoPocket2CREST pipeline...")    
     start = time.time()
-    os.makedirs(os.path.join(base_dir, pdbid), exist_ok=True)
-    os.chdir(os.path.join(base_dir, pdbid))
+    os.makedirs(os.path.join(base_dir, outdir), exist_ok=True)
+    os.chdir(os.path.join(base_dir, outdir))
 
     cwd = os.getcwd()
     print(f"Current working directory: {cwd}")

@@ -16,4 +16,3 @@ autopocket2crest.egg-info/SOURCES.txt
 autopocket2crest.egg-info/dependency_links.txt
 autopocket2crest.egg-info/entry_points.txt
 autopocket2crest.egg-info/top_level.txt
-tests/test_basic.py

@@ -7,12 +7,13 @@ from .crest_interface import generate_constraints, run_crest
 from .transfer_pdb_info import transfer_pdb_info
 from .cleanup import cleanup_temp_files
 
-def run_pipeline(protein_file, ligand_file, pdbid, run_crest_bool=True, base_dir=".", temp="310", lvl_of_theory="gfnff", extra_crest_args="-squick"):
+
+def run_pipeline(protein_file, ligand_file, outdir, run_crest_bool=True, base_dir=".", temp="310", lvl_of_theory="gfnff", extra_crest_args="-squick"):
     """Full AutoPocket2CREST pipeline."""
     print("Starting AutoPocket2CREST pipeline...")    
     start = time.time()
-    os.makedirs(os.path.join(base_dir, pdbid), exist_ok=True)
-    os.chdir(os.path.join(base_dir, pdbid))
+    os.makedirs(os.path.join(base_dir, outdir), exist_ok=True)
+    os.chdir(os.path.join(base_dir, outdir))
 
     cwd = os.getcwd()
     print(f"Current working directory: {cwd}")
@@ -47,7 +48,8 @@ def run_pipeline(protein_file, ligand_file, pdbid, run_crest_bool=True, base_dir
     mol = Chem.MolFromPDBFile(f"{cwd}/test_pocket_extended_h_fixed.pdb", sanitize=False, removeHs=False)
     charge = Chem.GetFormalCharge(mol)
     print("Formal charge:", charge)
-
+    print("Preperation complete in", round((time.time()-start), 2), " seconds")
+    
     if run_crest_bool:
         print("Running CREST conformer search...")
         # Select backbone atoms from this definitive final structure
@@ -69,4 +71,4 @@ def run_pipeline(protein_file, ligand_file, pdbid, run_crest_bool=True, base_dir
     f"{cwd}/.CHRG",
     f"{cwd}/.xcontrol.sample"
     ])
-    print("AutoPocket2CREST complete in", round((time.time()-start)/3600, 2), "hours.")
+    print("Full AutoPocket2CREST Pipeline complete in", round((time.time()-start)/3600, 2), "hours.")

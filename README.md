@@ -143,7 +143,7 @@ Output: test_pocket_extended_h_fixed.pdb, constraints.inp, crest.out, and the fu
 
 Developed by Christian Fellinger (Github: Dragon3221)
 
-This will be part of my Doctoral Thesis. I will share how to Cite it as soon as it is available.
+Please Cite the Publication [AutoPocket2CREST: Automating Binding Pocket Extraction for the CREST Conformer Generation Pipeline](https://doi.org/10.1021/acs.jcim.6c00569) 
 
 ## Acknowledgements
 
